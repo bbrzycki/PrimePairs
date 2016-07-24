@@ -16,4 +16,4 @@ def varyLimit(maxlimit, index, step = 1):
     plt.show()
     return 
 
-varyLimit(100000, 20, 1000) 
+varyLimit(100000, 30, 5000) 
