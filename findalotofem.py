@@ -8,7 +8,7 @@ def runOnPrimes(start,stop,index_limit):
 	for i in xrange(start,stop+1):
 		if isp.isPrime(i):
 			bro_candidate = f.findBroPrime(i,index_limit)
-			print i, bro_candidate
+			#print i, bro_candidate
 			if bro_candidate == -1:
 				count += 1
 	return count
