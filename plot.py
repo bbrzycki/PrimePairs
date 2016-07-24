@@ -14,4 +14,4 @@ def varyLimit(maxlimit, index, step = 1):
     f4 = lambda n: f.runOnPrimes(2, n, index)   
     plt. plot ( f1_domain , map(f4, f1_domain), 'bx' )
     plt.show()
-    return 
+    return
