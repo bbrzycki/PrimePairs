@@ -40,4 +40,4 @@ def runOnPrimesSet(start,stop,index_limit):
 				print i, bro_candidate
 	return count
 
-runOnPrimesSet(2,1000000,62)
+#runOnPrimesSet(2,1000000,62)
