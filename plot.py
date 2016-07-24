@@ -15,5 +15,3 @@ def varyLimit(maxlimit, index, step = 1):
     plt. plot ( f1_domain , map(f4, f1_domain), 'bx' )
     plt.show()
     return 
-
-varyLimit(100000, 30, 5000) 
