@@ -8,13 +8,15 @@ def runOnPrimes(start,stop,index_limit):
 	for i in xrange(start,stop+1):
 		if isp.isPrime(i):
 			bro_candidate = f.findBroPrime(i,index_limit)
-			#print i, bro_candidate
+			print i, bro_candidate
 			if bro_candidate == -1:
 				count += 1
 	return count
 
+#runOnPrimes(2,1000000,62)
 
 def runOnPrimesSet(start,stop,index_limit):
+	count = 0
 	broprimes = set()
 	for i in xrange(start,stop+1):
 		if isp.isPrime(i):
@@ -27,17 +29,15 @@ def runOnPrimesSet(start,stop,index_limit):
 					print b, a
 					broprimeFound = True
 			bro_candidate = f.findBroPrime(i,index_limit)
-			if broprimeFound == False:
-				
-				if bro_candidate == -1:
-					print "Not found for ", i, "!!"
-				else:
-					print i, bro_candidate
 			if bro_candidate == -1:
+				print "Yikes, nothing above me."
+				if broprimeFound == False:
 					print "Not found for ", i, "!!"
-			elif bro_candidate != -1:
+					count += 1
+					#return -1
+			else:
 				broprimes.add((i,f.findBroPrime(i,index_limit)))
 				print i, bro_candidate
-	return
+	return count
 
-#runOnPrimesSet(2,1000)
+runOnPrimesSet(2,1000000,62)
