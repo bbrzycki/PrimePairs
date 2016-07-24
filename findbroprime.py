@@ -23,3 +23,6 @@ def findBroPrime(prime, index_limit):
 			temp_prime = prime + np.power(2,index)
 		# if index % 1 ==0: print index, temp_prime
 
+#print findBroPrime(2477,61)
+
+#2477+2^61=2305843009213696429
