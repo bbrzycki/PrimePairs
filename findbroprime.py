@@ -5,7 +5,8 @@ import warnings
 
 # warnings.filterwarnings('ignore')
 
-def findBroPrime(prime):
+# make sure index_limit <= 62
+def findBroPrime(prime, index_limit):
 	foundPrime = False
 	index = 0
 	temp_prime = prime + 1
@@ -14,10 +15,11 @@ def findBroPrime(prime):
 			foundPrime = True
 			# print index, temp_prime
 			return temp_prime
-		elif index >= 62:
-			return "None found with index at most 62"
+		elif index >= index_limit:
+			#print "No bigbroprime found for ", prime, " with index at most 62."
+			return -1
 		else:
 			index += 1
 			temp_prime = prime + np.power(2,index)
-		if index % 1 ==0: print index, temp_prime
+		# if index % 1 ==0: print index, temp_prime
 
