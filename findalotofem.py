@@ -30,7 +30,7 @@ def runOnPrimesSet(start,stop,index_limit):
 					broprimeFound = True
 			bro_candidate = f.findBroPrime(i,index_limit)
 			if bro_candidate == -1:
-				print "Yikes, nothing above me."
+				print "Yikes, nothing above me: ", prime
 				if broprimeFound == False:
 					print "Not found for ", i, "!!"
 					count += 1
