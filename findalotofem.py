@@ -2,6 +2,9 @@ import math as m
 import numpy as np
 import isprime as isp
 import findbroprime as f
+import primesieve.numpy as ps 
+
+print ps.generate_primes_array(40)
 
 def runOnPrimes(start,stop,index_limit):
 	count = 0
