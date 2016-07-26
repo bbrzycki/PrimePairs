@@ -1,6 +1,6 @@
 import math as m
 import numpy as np
-
+#fdsfd
 def isPrime(number):
 	if number <= 1: return False
 	elif number <= 3: return True
