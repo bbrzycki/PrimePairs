@@ -13,6 +13,7 @@ import primesieve.numpy as ps
 #     return [2,3] + [3*i+1|1 for i in xrange(1,n/3-correction) if sieve[i]]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 x = ps.generate_primes_array(2**32)
 np.save("prime_list", x)
 
@@ -28,9 +29,15 @@ np.save("prime_list", x)
 print np.load("prime_list.npy")
 #print np.load("prime_list_sieve.npy")
 =======
+=======
+>>>>>>> d53bf36eaa35cf628847cb90b3f50c1e273fef54
 x = ps.generate_primes_array(2**20)
 np.save("prime_list", x)
 
 print np.load("prime_list.npy")
+<<<<<<< HEAD
+#print np.load("prime_list_sieve.npy")
+>>>>>>> d53bf36eaa35cf628847cb90b3f50c1e273fef54
+=======
 #print np.load("prime_list_sieve.npy")
 >>>>>>> d53bf36eaa35cf628847cb90b3f50c1e273fef54
