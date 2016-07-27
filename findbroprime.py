@@ -44,3 +44,4 @@ def findBroPrimeArray(prime, index_limit, prime_list):
 #print findBroPrime(2477,61)
 
 #2477+2^61=2305843009213696429
+#158456325028528675187087902969=2297+2^97
