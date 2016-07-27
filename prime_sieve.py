@@ -12,6 +12,7 @@ import primesieve.numpy as ps
 #         sieve[k*(k-2*(i&1)+4)/3::2*k] = [False] * ((n/6-k*(k-2*(i&1)+4)/6-1)/k+1)
 #     return [2,3] + [3*i+1|1 for i in xrange(1,n/3-correction) if sieve[i]]
 
+<<<<<<< HEAD
 x = ps.generate_primes_array(2**32)
 np.save("prime_list", x)
 
@@ -26,3 +27,10 @@ np.save("prime_list", x)
 
 print np.load("prime_list.npy")
 #print np.load("prime_list_sieve.npy")
+=======
+x = ps.generate_primes_array(2**20)
+np.save("prime_list", x)
+
+print np.load("prime_list.npy")
+#print np.load("prime_list_sieve.npy")
+>>>>>>> d53bf36eaa35cf628847cb90b3f50c1e273fef54
