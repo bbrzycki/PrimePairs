@@ -70,11 +70,24 @@ def findBroPrimeArray1(prime, index_limit):
 			# temp_prime = prime + np.power(2,index)
 		# if index % 1 ==0: print index, temp_prime
 
+def runOnPrimesArray(start,stop,index_limit):
+	count = 0
+	catchemall = set()
+	for i in xrange(start,stop+1):
+		if isp.isPrimeArray(i):
+			bro_candidate = f.findBroPrimeArray(i,index_limit)
+			#print i, bro_candidate
+			if bro_candidate == -1:
+				count += 1
+				catchemall.add(i)
+	return count, catchemall
+
 def runOnPrimesSetArray(start,stop,index_limit):
 	count = 0
 	broprimes = set()
 	catchemall = set()
 	for i in xrange(start,stop+1):
+		print "..."+str(i)
 		if isPrimeArray(i):
 			broprimeFound = False
 			for (a,b) in broprimes:
@@ -90,11 +103,12 @@ def runOnPrimesSetArray(start,stop,index_limit):
 				if broprimeFound == False:
 					# print "Not found for ", i, "!!"
 					count += 1
+					catchemall.add(i)
 					#return -1
 			else:
 				broprimes.add((i,bro_candidate))
 				# print i, bro_candidate
-	return count
+	return count, catchemall
 
 #runOnPrimesSet(2,1000000,62)
 
