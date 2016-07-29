@@ -7,7 +7,7 @@ For a prime *p*, we call a prime *q* a "broprime" of *p* if it satisfies the con
 
 #### Implementation
 
-The main implementation lies in `damn.py`. We use the `prime-sieve` repository to generate primes quickly and generate a list of primes `prime_list.npy`, up to a certain limit. Using this list, we implement a prime test within `damn.py`, and implement functions to find broprimes over a large range of prime inputs. Finally, with `plotPrimes.py`, we plot the results and store the plots as pdf.
+The main implementation lies in `damn.py`. We use the `primesieve` repository to generate primes quickly via `prime_sieve.py` and generate a list of primes `prime_list.npy`, up to a certain limit. Using this list, we implement a prime test within `damn.py`, and implement functions to find broprimes over a large range of prime inputs. Finally, with `plotPrimes.py`, we plot the results and store the plots as pdf.
 
 
 
